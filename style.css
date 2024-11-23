@@ -303,7 +303,6 @@ body{
   
 }
 
-
 @media (min-width:320px) and (max-width: 720px){
   .item__input{
     width: 150px;
@@ -326,5 +325,26 @@ body{
     width: 60%;
     height: 60%;
   }
+
+}
+
+@media (min-width:320px) and (max-width: 500px){
+  .logo{
+    max-width: 80%;
+    max-height: 80%;
+  }
+  .item__input{
+    width: 100px;
+    height: 40px;
+    border: #D9D9D9;
+    border-radius: 40px;
+    background-color: #D9D9D9;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat;
+    background-position: 90px 10px;
+    font-size: 20px;
+    outline: none;
+    padding: 10px 50px 10px 10px;
   
+  }
 }
