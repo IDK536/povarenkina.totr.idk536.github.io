@@ -244,12 +244,13 @@ body{
       top: 0;
       right: 0;
       width: 50vw;
-      height: 100vh;
+       height: 100%;/*vh */
       background: #fff;
       border: 1px solid #000;
       padding: 20px 10px;
       transform: translateX(100%);
       transition: 0.3s ease;
+      display: none;
   }
   .nav-list {
       flex-direction: column;
@@ -281,6 +282,7 @@ body{
 }
 
 .main-nav.active {
+ display: block;
  transform: translate(0);
  transition: 0.3s ease;
 }
@@ -300,7 +302,38 @@ body{
     background-position: 3% 90%, 97% 25%;
     background-attachment: fixed;
   }
-  
+
+  form{
+    width: 30%;
+    height: 100%;
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+    border-radius: 5%;
+    margin: 30px auto;
+    padding: 4% 5% 5% 5%;
+  }
+
+  .btn{
+    background-color: #B3B3B3;
+    border-radius: 10%;
+    border-color: #B3B3B3;
+    width: 13%;
+    height: 15%;
+    padding-top: 3px;
+    padding-bottom: 2px;
+  }
+
+  .btn1{
+    background-color: #B3B3B3;
+    border-radius: 10%;
+    border-color: #B3B3B3;
+    width: 30%;
+    height: 35%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 25px;
+  }
+
 }
 
 @media (min-width:320px) and (max-width: 720px){
@@ -319,7 +352,37 @@ body{
   
   }
 
-  
+  form{
+    width: 50%;
+    height: 100%;
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+    border-radius: 5%;
+    margin: 30px auto;
+    padding: 4% 5% 5% 5%;
+  }
+
+  .btn{
+    background-color: #B3B3B3;
+    border-radius: 10%;
+    border-color: #B3B3B3;
+    width: 17%;
+    height: 15%;
+    padding-top: 3px;
+    padding-bottom: 2px;
+  }
+
+  .btn1{
+    background-color: #B3B3B3;
+    border-radius: 10%;
+    border-color: #B3B3B3;
+    width: 40%;
+    height: 35%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 25px;
+  }
+
   .main-images>img{
     margin: 60px 60px;
     width: 60%;
@@ -328,7 +391,14 @@ body{
 
 }
 
-@media (min-width:320px) and (max-width: 500px){
+@media (min-width:320px) and (max-width: 550px){
+
+  .main-images>img{
+    margin: 60px 60px;
+    width: 100%;
+    height: 100%;
+  }
+
   .logo{
     max-width: 80%;
     max-height: 80%;
@@ -345,6 +415,39 @@ body{
     font-size: 20px;
     outline: none;
     padding: 10px 50px 10px 10px;
+    margin-right: 5px;
   
   }
+
+  .btn{
+    background-color: #B3B3B3;
+    border-radius: 10%;
+    border-color: #B3B3B3;
+    width: 30%;
+    height: 30%;
+    padding-top: 3px;
+    padding-bottom: 2px;
+  }
+
+  .btn1{
+    background-color: #B3B3B3;
+    border-radius: 10%;
+    border-color: #B3B3B3;
+    width: 50%;
+    height: 35%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: 25px;
+  }
+
+  form{
+    width: 70%;
+    height: 100%;
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+    border-radius: 5%;
+    margin: 30px auto;
+    padding: 4% 5% 5% 5%;
+  }
+
 }
